@@ -1,4 +1,15 @@
 
+console.log("✅ Script loaded");
+
+if (window.innerWidth < 990) {
+  document.body.innerHTML = `
+    <div style="color: white; background: black; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; font-size: 24px;">
+      🚫 Please use a desktop or larger screen to view and use this timesheet.
+    </div>
+  `;
+  throw new Error("Blocked on small screen");
+}
+
 
 let header = document.querySelector('header');
 let logo = document.getElementById('logo')

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <link rel="icon" href="https://wpstaq-ap-southeast-2-media.s3.amazonaws.com/dev-maxispan/wp-content/uploads/media/2024/12/favicon-150x150.png" type="png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
+    
+</head>
+<body class="mt-[120px] text-white bg-gradient-to-b from-gray-900 to-black font-arial h-[1200px]">
+
+    <div class="block sm:hidden flex items-center justify-center h-screen text-center px-6 text-white text-xl font-semibold">
+        🚫 Please use a desktop or larger screen to view and use this timesheet.
+    </div>
+    <div class="hidden sm:block">
+        <header class="header fixed top-0 p-[20px] left-0 w-full flex items-center transition-colors duration-500 ease-in-out">
+            <img id="logo" class="cursor-pointer h-12 transition-transform duration-100" 
+            src="https://tinyurl.com/3ernewy8" alt="Logo">
+        </header>
+        <div>
+            <p class="pl-[20px] text-lg  text-white-200 border border-gray-300  
+            rounded-lg p-4"><span class="font-bold text-[20px]">Drafting</span> TimeSheet</p>
+        </div> 
+        <div class="pl-[30px] mt-[25px]">
+            <span class="font-bold text-md">Week </span>: 
+            <input id="weekEndingInput" type="date" class="px-4 py-2 bg-gray-800 text-white border 
+            border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+            <span class=" ml-[20px] font-bold text-md">Employee Name </span>: 
+            <input id="employeeName" type="text" class="px-4 py-2 bg-gray-800 text-white border 
+            border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        </div>
+        <div class="flex px-[25px] mt-[20px] mb-[12px]">
+            <div class="flex items-center w-[370px]">
+                <span class="inline pr-3 py-1 font-bold">Tasks</span>
+                <span class="inline ml-[200px] font-bold px-3 py-1">Job No</span>
+            </div>
+            <div class="ml-[51px] flex justify-between w-[500px]" id="weekDaysContainer">
+                
+            </div>
+            <div class="flex items-center w-[110px]">
+                <span class=" ml-[20px] inline px-3 py-1 font-bold">Comments</span>
+            </div>
+        </div>
+        <div class="border border-gray-500 mx-[20px]">
+
+        </div>
+        <div class="flex gap-4 w-full mt-[20px]">
+            <div class="dropdown flex flex-col gap-[2.560rem] w-[250px]">
+            
+            </div>
+            <div class="job-num flex flex-col gap-10 w-[120px]">
+                
+            </div>
+            <div class="monday flex flex-col ml-[22px] gap-10 w-[90px]">
+                
+            </div>
+            <div class="tuesday flex flex-col gap-10 w-[90px]">
+                
+            </div>
+            <div class="wednesday flex flex-col gap-10 w-[90px]">
+                
+            </div>
+            <div class="thursday flex flex-col gap-10 w-[90px]">
+                
+            </div>
+            <div class="friday flex flex-col gap-10 w-[90px]">
+                
+            </div>
+            <div class="comments flex flex-col gap-[2.560rem] w-[350px]">
+                
+            </div>
+        </div>
+        <div class="border border-gray-500 mt-[17px] mx-[20px]">
+
+        </div>
+        <div class="flex mt-[20px]">
+            <span class="ml-[24px] text-lg font-bold text-left w-[422px]">Total</span>
+            <div class="total flex justify-between w-[500px]">
+                
+            </div>
+        </div>
+
+        <div class="flex justify-center align-center mt-[40px]">
+            <div>
+                <button id="Download-spreadSheet" class="bg-gray-700 hover:bg-gray-600 transition 
+                duration-300 ease-in-out text-center cursor-pointer text-white w-[280px] px-3 py-1 rounded-md">Download Excel-Sheet</button>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+</html>

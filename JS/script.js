@@ -1,5 +1,5 @@
 
-console.log("✅ Script loaded");
+
 
 if (window.innerWidth < 990) {
   document.body.innerHTML = `

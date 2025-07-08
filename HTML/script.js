@@ -90,7 +90,7 @@ for(let i = 0; i < 10; i++){
 
 // Comments Loop
 for(let i = 0; i < 10; i++){
-  comments.innerHTML += `<input id="comments${i}" class="bg-gray-700  ml-[22px] h-[31px] text-white w-full px-3 py-1 rounded-md" type="text">`  
+  comments.innerHTML += `<input id="comments${i}" class="bg-gray-700  ml-[22px]  h-[31px] text-white w-full px-3 py-1 rounded-md" type="text">`  
 }
 
 // Total Loop
